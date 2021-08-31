@@ -25,5 +25,17 @@ public class SimpleATM {
 		}
 	}
 	
+	public static String checkBalance(String ID)
+	{
+		String end = "";
+		if (accounts.containsKey(ID))
+		{
+			return "Balance: $" + accounts.get(ID);
+		}
+		else
+		{
+			return "ID does not exist.";
+		}
+	}
 
 }
