@@ -30,11 +30,11 @@ public class SimpleATM {
 		String end = "";
 		if (accounts.containsKey(ID))
 		{
-			return "Balance: $" + accounts.get(ID);
+			return "Balance for " + ID + ": $" + accounts.get(ID);
 		}
 		else
 		{
-			return "ID does not exist.";
+			return "Error: ID does not exist.";
 		}
 	}
 	
