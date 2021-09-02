@@ -27,7 +27,6 @@ public class SimpleATM {
 	
 	public String checkBalance(String ID)
 	{
-		String end = "";
 		if (accounts.containsKey(ID))
 		{
 			return "Balance for " + ID + ": $" + accounts.get(ID);
